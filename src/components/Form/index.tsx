@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import Button from "../Button";
 import style from "./Form.module.scss";
 import { v4 as uuidV4 } from "uuid";
-import { TASKS } from "../../types/tasks";
+import { TASK } from "../../types/task";
 
 const STATE_DEFAULT = {
   task: "",
@@ -12,7 +12,7 @@ const STATE_DEFAULT = {
 const Form = ({
   setTasks,
 }: {
-  setTasks: React.Dispatch<React.SetStateAction<TASKS[]>>;
+  setTasks: React.Dispatch<React.SetStateAction<TASK[]>>;
 }) => {
   const [task, setTask] = useState(STATE_DEFAULT.task);
   const [time, setTime] = useState(STATE_DEFAULT.time);
