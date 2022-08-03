@@ -7,7 +7,6 @@ import style from "./App.module.scss";
 
 const App = () => {
   const [tasks, setTasks] = useState<TASKS[]>([]);
-  console.log("As tasks:", tasks);
 
   return (
     <div className={style.AppStyle}>
