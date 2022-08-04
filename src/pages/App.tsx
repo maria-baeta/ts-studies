@@ -19,11 +19,29 @@ const App = () => {
     );
   };
 
+  const finishedTask = () => {
+    if (selected) {
+      setTasks((tasksPrevious) =>
+        tasksPrevious.map((task) => {
+          if (task.id === selected.id) {
+            return {
+              ...task,
+              selected: false,
+              concluded: true,
+            };
+          }
+          return task;
+        })
+      );
+      setSelected(undefined);
+    }
+  };
+
   return (
     <div className={style.AppStyle}>
       <Form setTasks={setTasks} />
       <List handleSelected={handleSelected} tasks={tasks} />
-      <Stopwatch selected={selected} />
+      <Stopwatch finishedTask={finishedTask} selected={selected} />
     </div>
   );
 };
