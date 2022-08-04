@@ -19,6 +19,10 @@ const App = () => {
     );
   };
 
+  const deleteTask = (id: string) => {
+    setTasks((taksPrevius) => taksPrevius.filter((task) => task.id !== id));
+  };
+
   const finishedTask = () => {
     if (selected) {
       setTasks((tasksPrevious) =>
@@ -40,7 +44,11 @@ const App = () => {
   return (
     <div className={style.AppStyle}>
       <Form setTasks={setTasks} />
-      <List handleSelected={handleSelected} tasks={tasks} />
+      <List
+        deleteTask={deleteTask}
+        handleSelected={handleSelected}
+        tasks={tasks}
+      />
       <Stopwatch finishedTask={finishedTask} selected={selected} />
     </div>
   );

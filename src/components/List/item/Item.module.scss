@@ -43,3 +43,14 @@
     height: 43px;
   }
 }
+
+.buttons {
+  display: flex;
+  padding: 5px;
+
+  button {
+    font-size: 1.25rem;
+    margin: 5px;
+    width: 120px;
+  }
+}

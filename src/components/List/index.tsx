@@ -5,9 +5,10 @@ import style from "./List.module.scss";
 interface PROPS_LIST {
   tasks: TASK[];
   handleSelected: (taskSelected: TASK) => void;
+  deleteTask: (id: string) => void;
 }
 
-const List = ({ tasks, handleSelected }: PROPS_LIST) => {
+const List = ({ tasks, handleSelected, deleteTask }: PROPS_LIST) => {
   return (
     <aside className={style.listaTarefas}>
       <h2>Estudos do dia</h2>
@@ -21,6 +22,7 @@ const List = ({ tasks, handleSelected }: PROPS_LIST) => {
             task={task}
             time={time}
             selected={selected}
+            deleteTask={deleteTask}
           />
         ))}
       </ul>

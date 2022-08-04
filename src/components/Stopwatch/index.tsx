@@ -33,7 +33,7 @@ const Stopwatch = ({ selected, finishedTask }: PROPS_STOPWATCH) => {
       <div className={style.relogioWrapper}>
         <Clock time={time} />
       </div>
-      <Button onClick={() => timeRule(time)} text="Começar!" />
+      <Button onClick={() => timeRule(time)} text="Start" />
     </div>
   );
 };

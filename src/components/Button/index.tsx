@@ -2,13 +2,19 @@ import style from "./Button.module.scss";
 
 interface PROPS_BUTTON {
   text: string;
-  onClick?: () => void | undefined;
+  onClick?: () => void | undefined | false;
   type?: "button" | "submit" | "reset" | undefined;
+  disabled?: boolean;
 }
 
-const Button = ({ text, type, onClick }: PROPS_BUTTON) => {
+const Button = ({ text, type, onClick, disabled }: PROPS_BUTTON) => {
   return (
-    <button onClick={onClick} type={type} className={style.botao}>
+    <button
+      disabled={disabled}
+      onClick={onClick}
+      type={type}
+      className={`${disabled ? style.disabled : style.botao}`}
+    >
       {text}
     </button>
   );
