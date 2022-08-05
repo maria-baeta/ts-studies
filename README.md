@@ -12,6 +12,8 @@ Durante o curso:
 - Aprendi sobre os hooks useState e useEffect e como eles eram usados nos class components;
 - Código desenvolvido com conceitos de boas práticas como DRY (Don't repeat yourself) e SRP (Single Responsibility Principle);
 
+**Conslusão**: 04/08/2022
+
 ## O que foi proposto:
 
 Criação de um modelo de TODO List básico que permite:
