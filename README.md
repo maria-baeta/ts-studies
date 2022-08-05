@@ -1,46 +1,74 @@
-# Getting Started with Create React App
+# Projeto Alura-studies
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Projeto desenvolvido durante o curso **React: escrevendo com Typescript** oferecido pela plataforma **Alura**.
 
-## Available Scripts
+O curso tem como objetivo desenvolver as seguintes tecnologias: React e TypeScript.
 
-In the project directory, you can run:
+Durante o curso:
 
-### `yarn start`
+- Crie um projeto React com Typescript do zero com Create React App;
+- Aprendi conceitos de React como Componentização, Props e State;
+- Utilizição de CSS Modules e SASS;
+- Aprendi sobre os hooks useState e useEffect e como eles eram usados nos class components;
+- Código desenvolvido com conceitos de boas práticas como DRY (Don't repeat yourself) e SRP (Single Responsibility Principle);
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## O que foi proposto:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Criação de um modelo de TODO List básico que permite:
 
-### `yarn test`
+- Incluir tarefas a uma lista;
+- Inciar contagem regressiva para execução da tarefa;
+- Dar como concluida a tarefa ao fim do tempo.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+O qeue fiz a mais:
 
-### `yarn build`
+- Inclui botão que iniciar cronometragem das tarefas;
+- Excluir tarefa da lista;
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Preparando o projeto localmente
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### **1º passo:** Baixe o projeto do git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Faça o clone do projeto pra sua máquina
 
-### `yarn eject`
+- **URL**: https://github.com/maria-baeta/ts-studies.git
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+### **2º passo:** Instalando as dependências
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Para instalar as dependências do projeto execute o comando:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+```bash
+$ yarn
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Executando localmente
 
-## Learn More
+Execute o comando abaixo:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+```bash
+$ yarn start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+o VS-Code irá abrir uma instância do Chrome já na url:
+
+```bash
+hhttp://localhost:3000/
+```
+
+## Dificuldades
+
+- Identificar os tipos referentes as props compartilhada pelos componentes.
+
+## Aprendizados
+
+- Como identificar os tipos especificos
+
+## Como ficou?
+
+Após a conclusão do curso:
+
+![curso](public/proposta-do-curso.png)
+
+O que adicione:
+
+![maria](public/melhorias.png)
