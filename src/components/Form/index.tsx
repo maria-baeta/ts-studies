@@ -22,8 +22,8 @@ const Form = ({
     setTasks((tasksPrevious) => [
       ...tasksPrevious,
       {
-        task: task,
-        time: time,
+        task,
+        time,
         selected: false,
         concluded: false,
         id: uuidV4(),
@@ -34,13 +34,13 @@ const Form = ({
   };
 
   return (
-    <form className={style.novaTarefa} onSubmit={(event) => salveTasks(event)}>
+    <form className={style.newTask} onSubmit={(event) => salveTasks(event)}>
       <div className={style.inputContainer}>
         <label htmlFor="task">Adicione um novo estudo</label>
         <input
           id="task"
           name="task"
-          onChange={(event) => setTask(event.target.value)}
+          onChange={({target: { value }}) => setTask(value)}
           placeholder="O que você quer estudar ?"
           required
           type="text"
@@ -54,7 +54,7 @@ const Form = ({
           max="01:30:00"
           min="00:00:00"
           name="time"
-          onChange={(event) => setTime(event.target.value)}
+          onChange={({target: { value }}) => setTime(value)}
           required
           step="1"
           type="time"

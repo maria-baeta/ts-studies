@@ -10,6 +10,8 @@ interface PROPS_STOPWATCH {
   finishedTask: () => void;
 }
 
+const SECOND = 1000
+
 const Stopwatch = ({ selected, finishedTask }: PROPS_STOPWATCH) => {
   const [time, setTime] = useState<number>();
 
@@ -24,13 +26,13 @@ const Stopwatch = ({ selected, finishedTask }: PROPS_STOPWATCH) => {
         return timeRule(counter - 1);
       }
       finishedTask();
-    }, 1000);
+    }, SECOND);
   };
 
   return (
-    <div className={style.cronometro}>
-      <p className={style.titulo}>Escolha um card e inicie o cronômetro</p>
-      <div className={style.relogioWrapper}>
+    <div className={style.stopWatch}>
+      <p className={style.title}>Escolha um card e inicie o cronômetro</p>
+      <div className={style.clockWrapper}>
         <Clock time={time} />
       </div>
       <Button onClick={() => timeRule(time)} text="Start" />

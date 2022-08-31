@@ -31,7 +31,7 @@ export const Item = ({
       </div>
       <div className={style.buttons}>
         <Button
-          disabled={concluded ? true : false}
+          disabled={concluded}
           text="Começar"
           onClick={() =>
             !concluded &&
@@ -39,7 +39,7 @@ export const Item = ({
           }
         />
         <Button
-          disabled={selected || concluded ? true : false}
+          disabled={selected || concluded}
           onClick={() => deleteTask(id)}
           text="Excluir"
         />
