@@ -8,26 +8,24 @@ interface PROPS_LIST {
   deleteTask: (id: string) => void;
 }
 
-const List = ({ tasks, handleSelected, deleteTask }: PROPS_LIST) => {
-  return (
-    <aside className={style.listaTarefas}>
-      <h2>Estudos do dia</h2>
-      <ul>
-        {tasks.map(({ task, time, selected, concluded, id }) => (
-          <Item
-            concluded={concluded}
-            id={id}
-            key={id}
-            handleSelected={handleSelected}
-            task={task}
-            time={time}
-            selected={selected}
-            deleteTask={deleteTask}
-          />
-        ))}
-      </ul>
-    </aside>
-  );
-};
+const List = ({ tasks, handleSelected, deleteTask }: PROPS_LIST) => (
+  <aside className={style.listaTarefas}>
+    <h2>Estudos do dia</h2>
+    <ul>
+      {tasks.map(({ task, time, selected, concluded, id }) => (
+        <Item
+          concluded={concluded}
+          id={id}
+          key={id}
+          handleSelected={handleSelected}
+          task={task}
+          time={time}
+          selected={selected}
+          deleteTask={deleteTask}
+        />
+      ))}
+    </ul>
+  </aside>
+);
 
 export default List;
