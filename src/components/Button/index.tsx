@@ -7,17 +7,15 @@ interface PROPS_BUTTON {
   disabled?: boolean;
 }
 
-const Button = ({ text, type, onClick, disabled }: PROPS_BUTTON) => {
-  return (
-    <button
-      disabled={disabled}
-      onClick={onClick}
-      type={type}
-      className={`${disabled ? style.disabled : style.botao}`}
-    >
-      {text}
-    </button>
-  );
-};
+const Button = ({ text, type, onClick, disabled }: PROPS_BUTTON) => (
+  <button
+    disabled={disabled}
+    onClick={onClick}
+    type={type}
+    className={`${disabled ? style.disabled : style.button}`}
+  >
+    {text}
+  </button>
+);
 
 export default Button;

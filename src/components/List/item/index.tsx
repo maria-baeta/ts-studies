@@ -15,35 +15,32 @@ export const Item = ({
   id,
   handleSelected,
   deleteTask,
-}: PROPS_ITEM) => {
-  return (
-    <li
-      className={`${style.item} ${selected ? style.itemSelecionado : ""} ${
-        concluded ? style.itemCompletado : ""
-      }`}
-    >
-      {concluded && (
-        <span className={style.concluido} aria-label="tarefa concluída"></span>
-      )}
-      <div>
-        <h3>{task}</h3>
-        <span>{time}</span>
-      </div>
-      <div className={style.buttons}>
-        <Button
-          disabled={concluded ? true : false}
-          text="Começar"
-          onClick={() =>
-            !concluded &&
-            handleSelected({ task, time, selected, concluded, id })
-          }
-        />
-        <Button
-          disabled={selected || concluded ? true : false}
-          onClick={() => deleteTask(id)}
-          text="Excluir"
-        />
-      </div>
-    </li>
-  );
-};
+}: PROPS_ITEM) => (
+  <li
+    className={`${style.item} ${selected ? style.selectedItem : ""} ${
+      concluded ? style.completedItem : ""
+    }`}
+  >
+    {concluded && (
+      <span className={style.concluded} aria-label="tarefa concluída"></span>
+    )}
+    <div>
+      <h3>{task}</h3>
+      <span>{time}</span>
+    </div>
+    <div className={style.buttons}>
+      <Button
+        disabled={concluded}
+        text="Começar"
+        onClick={() =>
+          !concluded && handleSelected({ task, time, selected, concluded, id })
+        }
+      />
+      <Button
+        disabled={selected || concluded}
+        onClick={() => deleteTask(id)}
+        text="Excluir"
+      />
+    </div>
+  </li>
+);

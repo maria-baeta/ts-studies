@@ -14,14 +14,13 @@ const App = () => {
     setTasks((tasksPrevious) =>
       tasksPrevious.map((task) => ({
         ...task,
-        selected: task.id === taskSelected.id ? true : false,
+        selected: task.id === taskSelected.id,
       }))
     );
   };
 
-  const deleteTask = (id: string) => {
+  const deleteTask = (id: string) =>
     setTasks((taksPrevius) => taksPrevius.filter((task) => task.id !== id));
-  };
 
   const finishedTask = () => {
     if (selected) {
