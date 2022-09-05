@@ -36,6 +36,8 @@ const Stopwatch = ({ selected, finishedTask }: PROPS_STOPWATCH) => {
         <Clock time={time} />
       </div>
       <Button onClick={() => timeRule(time)} text="Start" />
+      <Button onClick={() => console.log("Pause")} text="Pause" />
+      <Button onClick={() => console.log("Clear")} text="Clear" />
     </div>
   );
 };
