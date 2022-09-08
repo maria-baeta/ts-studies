@@ -22,10 +22,10 @@ Criação de um modelo de TODO List básico que permite:
 - Inciar contagem regressiva para execução da tarefa;
 - Dar como concluida a tarefa ao fim do tempo.
 
-O qeue fiz a mais:
+Sugestões de melhorias implementadas por mim:
 
-- Inclui botão que iniciar cronometragem das tarefas;
-- Excluir tarefa da lista;
+- Inclusão de botões: para Começar (botão que iniciar cronometragem das tarefas) e Excluir (exclui tarefa da lista) ;
+- Inclusão de botão de Pause (que pausa a contagem regressiva)
 
 ## Preparando o projeto localmente
 
@@ -71,6 +71,6 @@ Após a conclusão do curso:
 
 ![curso](public/proposta-do-curso.png)
 
-O que adicione:
+O que adicionei:
 
 ![maria](public/melhorias.png)
