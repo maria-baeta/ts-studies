@@ -52,7 +52,7 @@ const Form = ({
         <input
           id="time"
           max="01:30:00"
-          min="00:00:00"
+          min="00:00:01"
           name="time"
           onChange={({ target: { value } }) => setTime(value)}
           required

@@ -49,6 +49,7 @@ const App = () => {
         tasks={tasks}
       />
       <Stopwatch finishedTask={finishedTask} selected={selected} />
+      {/* <Timer /> */}
     </div>
   );
 };

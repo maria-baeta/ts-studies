@@ -2,7 +2,7 @@ import style from "./Button.module.scss";
 
 interface PROPS_BUTTON {
   text: string;
-  onClick?: () => void | undefined | false;
+  onClick?: (event: any) => void | undefined | false;
   type?: "button" | "submit" | "reset" | undefined;
   disabled?: boolean;
 }
