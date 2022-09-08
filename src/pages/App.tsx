@@ -1,7 +1,5 @@
 import React, { useState } from "react";
-import Form from "../components/Form";
-import List from "../components/List";
-import Stopwatch from "../components/Stopwatch";
+import { Form, List, Stopwatch } from "../components";
 import { TASK } from "../types/task";
 import style from "./App.module.scss";
 
@@ -49,7 +47,6 @@ const App = () => {
         tasks={tasks}
       />
       <Stopwatch finishedTask={finishedTask} selected={selected} />
-      {/* <Timer /> */}
     </div>
   );
 };

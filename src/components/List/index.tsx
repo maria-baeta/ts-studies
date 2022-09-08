@@ -8,7 +8,7 @@ interface PROPS_LIST {
   deleteTask: (id: string) => void;
 }
 
-const List = ({ tasks, handleSelected, deleteTask }: PROPS_LIST) => (
+export const List = ({ tasks, handleSelected, deleteTask }: PROPS_LIST) => (
   <aside className={style.listTask}>
     <h2>Estudos do dia</h2>
     <ul>
@@ -27,5 +27,3 @@ const List = ({ tasks, handleSelected, deleteTask }: PROPS_LIST) => (
     </ul>
   </aside>
 );
-
-export default List;

@@ -9,7 +9,7 @@ const STATE_DEFAULT = {
   time: "00:00:00",
 };
 
-const Form = ({
+export const Form = ({
   setTasks,
 }: {
   setTasks: React.Dispatch<React.SetStateAction<TASK[]>>;
@@ -65,5 +65,3 @@ const Form = ({
     </form>
   );
 };
-
-export default Form;

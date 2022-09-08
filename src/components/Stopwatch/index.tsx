@@ -12,7 +12,7 @@ interface PROPS_STOPWATCH {
 
 const SECOND = 1000;
 
-const Stopwatch = ({ selected, finishedTask }: PROPS_STOPWATCH) => {
+export const Stopwatch = ({ selected, finishedTask }: PROPS_STOPWATCH) => {
   const [time, setTime] = useState<number>();
   const [id, setId] = useState();
 
@@ -50,5 +50,3 @@ const Stopwatch = ({ selected, finishedTask }: PROPS_STOPWATCH) => {
     </div>
   );
 };
-
-export default Stopwatch;
