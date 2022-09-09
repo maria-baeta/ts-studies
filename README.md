@@ -13,6 +13,7 @@ Durante o curso:
 - Código desenvolvido com conceitos de boas práticas como DRY (Don't repeat yourself) e SRP (Single Responsibility Principle);
 
 **Conslusão**: 04/08/2022
+**URL da aplicação rodando**: https://papaya-dusk-fab328.netlify.app/
 
 ## O que foi proposto:
 
